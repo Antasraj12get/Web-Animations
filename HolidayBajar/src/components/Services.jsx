@@ -1,16 +1,14 @@
 // File: PopularDestination.jsx
 import React from "react";
-import "../style/service.css";
+import "../style/Common.css";
 const Services = () => {
   return (
     <section className="destination-section">
       <div className="destination-container">
-        <h2 className="destination-title">POPULAR DESTINATION IN INDIA</h2>
+        <h2 className="destination-title">OUR SERVICES</h2>
         <p className="destination-text">
-          India is a vibrant land of startling contrasts where both the traditional and modern
-          worlds meet. The world's seventh largest nation by area and the second largest in terms
-          of population, India boasts a rich heritage that's the result of centuries of different
-          cultures and religions leaving their mark.
+        At Jingle Holiday Bazar, we are committed to ensuring that you save on every trip and every holiday
+        booking you make with us by bringing to you the best price deals; be it flights, tours or hotels. Our unique budget
         </p>
       </div>
     </section>
