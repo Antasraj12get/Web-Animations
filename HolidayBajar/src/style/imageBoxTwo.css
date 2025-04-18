@@ -1,0 +1,100 @@
+.imagebox-two-container {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    padding: 10px;
+  }
+  
+  .left-box2-container {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .upper-img {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+  }
+  
+  /* Flip card container */
+  .flip-card {
+    width: 90%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front img,
+  .flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .lower-content {
+    padding: 35px;
+  }
+  
+  .right-box2-container {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .above-box {
+    height: 50%;
+    width: 100%;
+    display: flex;
+  }
+  
+  .above-boximg {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .above-boximg img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .above-box-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .below-box {
+    height: 50%;
+    width: 100%;
+    display: flex;
+  }
+  

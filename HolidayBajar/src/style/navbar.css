@@ -13,8 +13,8 @@
     background: black;
     height: 90px;
     justify-content: space-around;
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
 }
 .nav-left{
     width: 20%;
