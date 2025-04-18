@@ -1,0 +1,59 @@
+/* File: PopularDestination.css */
+.destination-section {
+    background: linear-gradient(to bottom, #ffffff, #f4f6f8);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .destination-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    background: linear-gradient(90deg, #ff6a00, #ee0979, #6a00ff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 6s infinite linear;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  @keyframes gradientFlow {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 300%;
+    }
+  }
+  
+  .destination-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #222;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeInText 1s ease-out 0.5s forwards;
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .destination-title {
+      font-size: 2rem;
+    }
+    .destination-text {
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,122 @@
+/* CSS: ../style/card.css */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .all-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .card-article {
+    position: relative;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-article img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+  
+  .card-article:hover img {
+    transform: scale(1.05);
+    filter: brightness(70%);
+  }
+  
+  .card-data {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out, backdrop-filter 0.4s ease;
+    backdrop-filter: blur(8px);
+    color: white;
+    text-align: center;
+  }
+  
+  .card-article:hover .card-data {
+    transform: translateY(0);
+  }
+  
+  .card-data h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .card-data h5 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffe0e0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-data p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-data button {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(238, 9, 121, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .card-data button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(238, 9, 121, 0.5);
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-article {
+      width: 90%;
+    }
+    .card-article img {
+      height: 250px;
+    }
+    .card-data {
+      padding: 0.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cards-container {
+      padding: 1rem;
+    }
+    .card-article img {
+      height: 200px;
+    }
+  }
+  
