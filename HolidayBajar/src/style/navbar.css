@@ -9,7 +9,12 @@
 
 .navbar-container {
   width: 100%;
-  background: black;
+  background: linear-gradient(#3586ff, #3586ff, #428bf8);
+}
+.nav-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Main nav bar row */
@@ -25,8 +30,8 @@
 /* Logo */
 .nav-left img {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 /* Hamburger */
@@ -35,6 +40,7 @@
   flex-direction: column;
   cursor: pointer;
   padding: 1rem;
+  /* padding-bottom: 202px; */
 }
 
 .hamburger span {
@@ -75,14 +81,14 @@
   }
 
   .nav-left img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .hamburger {
     display: flex;
     align-self: flex-end;
-    margin-top: -50px;
+    margin-top: -80px;
     z-index: 2;
   }
 
@@ -92,7 +98,7 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.4s ease-in-out;
-    background-color: black;
+    background: linear-gradient(#3586ff, #3586ff, #428bf8);
   }
 
   .item-container.open {
