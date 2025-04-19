@@ -33,7 +33,7 @@ const ImageBoxTwo = () => {
             about some of the Buddhist culture, lifestyle, scriptures, statues
             and even paintings.
           </p>
-          <button>WhatsApp Now More Details</button>
+          <button className="blue-animated-btn">WhatsApp Now More Details</button>
         </div>
       </div>
 
@@ -43,27 +43,27 @@ const ImageBoxTwo = () => {
             <img src="https://jingleholidaybazar.com/images/Solang-Valley.jpg" alt="" />
           </div>
           <div className="above-box-content">
-            <h4>Week At Solang Valley, Manali</h4>
+            <h2>Week At Solang Valley, Manali</h2>
             <p>
               A mini valley located at about 8400 feet above sea level, Solang
               Nala is a short drive away from Manali. If you are looking for
               snow-based activities and sports, winters are the best time to
               visit
             </p>
-            <button>Contact</button>
+            <button className="blue-animated-btn">Contact</button>
           </div>
         </div>
 
         <div className="below-box">
           <div className="above-box-content">
-            <h4>Week At Solang Valley, Manali</h4>
+            <h2>Week At Solang Valley, Manali</h2>
             <p>
               A mini valley located at about 8400 feet above sea level, Solang
               Nala is a short drive away from Manali. If you are looking for
               snow-based activities and sports, winters are the best time to
               visit
             </p>
-            <button>Contact</button>
+            <button className="blue-animated-btn">Contact</button>
           </div>
           <div className="above-boximg">
             <img

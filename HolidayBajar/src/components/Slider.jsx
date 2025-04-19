@@ -6,25 +6,25 @@ const sliderData = [
     image: 'https://cdn.pixabay.com/photo/2020/11/24/04/01/pond-5771499_1280.jpg',
     title: 'Welcome to Zindal Holiday Bazar',
     location: 'New Delhi NCR',
-    desc: 'Name Slider Description',
+    desc: 'Forest',
   },
   {
-    image: 'https://jingleholidaybazar.com/images/himalay.webp',
-    title: 'Explore the Wild',
+    image: 'https://c8.alamy.com/comp/S2EKCN/alignments-of-the-great-dravidian-architecture-the-rameshwaram-temple-S2EKCN.jpg',
+    title: 'Welcome to Jingle Holiday Bazar Pvt Ltd',
     location: 'Moose Mountains',
-    desc: 'Name Slider Description',
+    desc: 'Rameswaram',
   },
   {
-    image: 'https://jingleholidaybazar.com/images/akshardham-temple.webp',
-    title: 'Jungle Cat',
+    image: 'https://wallpapercave.com/wp/wp9600947.jpg',
+    title: 'Welcome to Jingle Holiday Bazar Pvt Ltd.',
     location: 'Amazon',
-    desc: 'Name Slider Description',
+    desc: 'Badrinath',
   },
   {
-    image: 'https://jingleholidaybazar.com/images/rameshwarm-banner.webp',
-    title: 'Mighty Elephant',
+    image: 'https://th.bing.com/th/id/OIP.uz0JsNJbq58aBZTwqtPa1wHaEK?rs=1&pid=ImgDetMain',
+    title: 'Welcome to Jingle Holiday Bazar Pvt Ltd.',
     location: 'Savannah',
-    desc: 'Name Slider Description',
+    desc: 'Jaypur',
   }
 ];
 

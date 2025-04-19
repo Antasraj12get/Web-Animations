@@ -1,65 +1,3 @@
-// import './App.css';
-// import Cards from './components/Cards';
-// import ImageBoxFirst from './components/ImageGalary';
-// import ImageBoxTwo from './components/ImageBoxTwo';
-// import Navbar from './components/Navbar';
-// import Services from './components/Services';
-// import Slider from './components/Slider';
-// import ImgGalary from './components/ImgGalary';
-// import Footer from './components/Footer';
-// import ContentBoxTwo from './components/ContntBox2';
-// import ContentBoxThree from './components/ContentBox3';
-// import ContentBoxFour from './components/ContentBoxFour';
-// import Galary from './components/Galary';
-// import ContentBoxFive from './components/ContentBoxFive';
-// // import Cursor from './components/Cursor'
-// import React, { useEffect, useRef } from 'react';
-
-// function App() {
-//   const cursorRef = useRef(null);
-
-//   useEffect(() => {
-//     const moveCursor = (e) => {
-//       if (cursorRef.current) {
-//         cursorRef.current.style.left = e.pageX + 'px';
-//         cursorRef.current.style.top = e.pageY + 'px';
-//       }
-//     };
-
-//     document.addEventListener('mousemove', moveCursor);
-//     return () => document.removeEventListener('mousemove', moveCursor);
-//   }, []);
-
-//   return (
-//     <>
-//       {/* Custom Cursor */}
-//       <div className="cursor" ref={cursorRef}></div>
-
-//       {/* Main App Content */}
-//       <Navbar />
-//       <Slider />
-//       <Services />
-//       <Cards />
-//       <ContentBoxTwo />
-//       <ImageBoxFirst />
-//       <ContentBoxThree />
-//       <ImageBoxFirst />
-//       <ContentBoxFour />
-//       <ImageBoxTwo />
-//       <Galary />
-//       <ImgGalary />
-//       <ContentBoxFive />
-//       <ImageBoxTwo />
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default App;
-
-
-
-
 import './App.css';
 import Cards from './components/Cards';
 import ImageBoxFirst from './components/ImageGalary';
@@ -76,6 +14,8 @@ import Galary from './components/Galary';
 import ContentBoxFive from './components/ContentBoxFive';
 
 import React, { useEffect, useRef, useState } from 'react';
+import PopularBox from './components/PopularHotels';
+import ImageBoxFirst_v2 from './components/ImageBoxFirst_v2';
 
 function App() {
   const cursorRef = useRef(null);
@@ -129,13 +69,13 @@ function App() {
       <ContentBoxTwo />
       <ImageBoxFirst />
       <ContentBoxThree />
-      <ImageBoxFirst />
+      <ImageBoxFirst_v2/>
       <ContentBoxFour />
       <ImageBoxTwo />
       <Galary />
       <ImgGalary />
       <ContentBoxFive />
-      <ImageBoxTwo />
+      <PopularBox/>
       <Footer />
     </>
   );
