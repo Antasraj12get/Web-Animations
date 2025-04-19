@@ -12,7 +12,6 @@ import ContentBoxThree from './components/ContentBox3';
 import ContentBoxFour from './components/ContentBoxFour';
 import Galary from './components/Galary';
 import ContentBoxFive from './components/ContentBoxFive';
-
 import React, { useEffect, useRef, useState } from 'react';
 import PopularBox from './components/PopularHotels';
 import ImageBoxFirst_v2 from './components/ImageBoxFirst_v2';
@@ -61,7 +60,6 @@ function App() {
         ref={cursorRef}
       ></div>
 
-      {/* App Content */}
       <Navbar />
       <Slider />
       <Services />

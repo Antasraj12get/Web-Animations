@@ -33,9 +33,7 @@ const PopularBox = () => {
 Hideout Resorts is a collection of elegantly designed hotels and resorts in Goa that aim to give our guests the opportunity to enjoy Goa in all her glory. Whether it’s the beaches ₹ 4499+
         
           </p>
-          <button class="blue-animated-btn">
-  <span>Click Me</span>
-</button>
+          
         </div>
       </div>
 
@@ -49,9 +47,7 @@ Hideout Resorts is a collection of elegantly designed hotels and resorts in Goa 
             <p>
             Prices for Taj Aravali Resort and Spa one of the best hotels in India, starts at ₹ 12999+ per night
             </p>
-            <button class="blue-animated-btn">
-  <span>Click Me</span>
-</button>
+           
           </div>
         </div>
 
@@ -64,9 +60,7 @@ Hideout Resorts is a collection of elegantly designed hotels and resorts in Goa 
 
 Set in Manāli Hotel Mountain face by Snow City Hotels offers accommodation with a restaurant, free private parking, a shared lounge and a garden.₹ 1,440+ per night
             </p>
-            <button class="blue-animated-btn">
-  <span>Click Me</span>
-</button>
+            
           </div>
           <div className="above-boximg">
             <img

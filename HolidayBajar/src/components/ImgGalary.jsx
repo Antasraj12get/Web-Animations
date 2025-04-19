@@ -65,3 +65,5 @@ const ImgGalary = () => {
 };
 
 export default ImgGalary;
+
+

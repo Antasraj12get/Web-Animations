@@ -1,119 +1,106 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.navbar-container{
-    display: flex;
-    width: 100%;
-    background: black;
-    height: 90px;
-    justify-content: space-around;
-    /* position: sticky; */
-    /* top: 0; */
-}
-.nav-left{
-    width: 20%;
-    position: relative;
-    top: 10px;
-    left: 50px;
-   
-}
-.nav-left img{
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.item-container{
-    position: relative;
-    width: 80%;
-    height: 90px;
-    display: flex;
-justify-content: space-between;
-align-items: center;
-    /* background: black; */
-}
-.item-container a{
-    position: relative;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    padding: 0 23px;
+.navbar-container {
+  width: 100%;
+  background: black;
 }
 
-/* From Uiverse.io by shah1345 */ 
+/* Main nav bar row */
+.nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 90px;
+  position: relative;
+}
+
+/* Logo */
+.nav-left img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+/* Nav items */
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .item-container a {
-    display: inline-block;
-    transition: all 0.2s ease-in;
-    position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.item-container a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 900px) {
+  .nav-main {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .nav-left img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hamburger {
+    display: flex;
+    align-self: flex-end;
+    margin-top: -50px;
+    z-index: 2;
+  }
+
+  .item-container {
+    flex-direction: column;
+    width: 100%;
     overflow: hidden;
-    z-index: 1;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 0.5em;
-    /* background: #e8e8e8; */
-    /* border: 1px solid #e8e8e8; */
-    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+    background-color: black;
   }
-  
-  .item-container a:active {
-    color: #666;
-    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+
+  .item-container.open {
+    max-height: 1000px;
   }
-  
-  .item-container a:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.25);
-    top: 100%;
-    width: 140%;
-    height: 180%;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
+
+  .item-container a {
+    width: 100%;
+    padding: 12px 20px;
   }
-  
-  .item-container a:after {
-    content: "";
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.45);
-    top: 180%;
-    width: 160%;
-    height: 190%;
-    background:linear-gradient(rgb(74, 74, 244), rgb(227, 100, 227));
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-  }
-  
-  .item-container a:hover {
-    color: #ffffff;
-    /* border: 1px solid #2d3af3; */
-  }
-  
-  .item-container a:hover:before {
-    top: -35%;
-    background:linear-gradient(rgb(74, 74, 244), rgb(227, 100, 227));
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
-  
-  .item-container a:hover:after {
-    top: -45%;
-    background:linear-gradient(rgb(74, 74, 244), rgb(227, 100, 227));
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
-  
+}

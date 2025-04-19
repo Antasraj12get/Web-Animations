@@ -40,3 +40,35 @@
         transform: perspective(1200px) rotateY(360deg);
     }
 }
+
+
+@media (max-width: 768px) {
+    .imageGalary {
+      height: 300px; 
+    }
+  
+    .image-gallary-two {
+      width: 220px;
+      height: 160px;
+    }
+  
+    .image-gallary-two span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imageGalary {
+      height: 250px;
+    }
+  
+    .image-gallary-two {
+      width: 180px;
+      height: 130px;
+    }
+  
+    .image-gallary-two span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+    }
+  }
+  
